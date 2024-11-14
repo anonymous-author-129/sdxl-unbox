@@ -280,7 +280,7 @@ def create_top_images_plus_search_part(retriever, demo):
             top_indices = []
             index = search_by_index
             block = block_select.split(" ")[0]
-            url = f"https://huggingface.co/anonymous-author-129/sdxl_sae_images/resolve/main/{block}/{index}.jpg"
+            url = f"https://huggingface.co/datasets/anonymous-author-129/sdxl_sae_images/resolve/main/{block}/{index}.jpg"
             return url, {"image": url, "feature_idx": index, "features": top_indices}
         else:
             if retriever is None:
@@ -293,7 +293,7 @@ def create_top_images_plus_search_part(retriever, demo):
             block = block_select.split(" ")[0]
             top_indices = list(map(int, top_indices))
             index = top_indices[0]
-            url = f"https://huggingface.co/anonymous-author-129/sdxl_sae_images/resolve/main/{block}/{index}.jpg"
+            url = f"https://huggingface.co/datasets/anonymous-author-129/sdxl_sae_images/resolve/main/{block}/{index}.jpg"
             return url, {"image": url, "feature_idx": index, "features": top_indices[:10]}
 
     def update_radio(cache):
@@ -301,7 +301,7 @@ def create_top_images_plus_search_part(retriever, demo):
 
     def update_img(cache, block_select, index):
         block = block_select.split(" ")[0]
-        url = f"https://huggingface.co/anonymous-author-129/sdxl_sae_images/resolve/main/{block}/{index}.jpg"
+        url = f"https://huggingface.co/datasets/anonymous-author-129/sdxl_sae_images/resolve/main/{block}/{index}.jpg"
         return url
 
     with gr.Tab("Top Images", elem_classes="tabs") as explore_tab:
