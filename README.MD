@@ -27,6 +27,7 @@ This repository contains code to reproduce results from our paper on using spars
 ```bash
 pip install -r requirements.txt
 ```
+(tested on python 3.11.10)
 
 ## Demo Application
 
