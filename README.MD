@@ -33,6 +33,8 @@ pip install -r requirements.txt
 
 You can try our gradio demo application (`app.ipynb`) to browse and experiment with 20K+ features of our trained SAEs out-of-the-box. 
 
+Additionally, you can access this notebook from [Google Colab](https://colab.research.google.com/drive/16VpTK-NrRdVBK8oEa7HDrnZEOHrO-ohM?usp=sharing) 
+
 ## Usage
 
 1. Collect latent data from SDXL Turbo:
