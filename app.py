@@ -324,8 +324,8 @@ def create_top_images_plus_search_part(retriever, demo):
                     elem_id="block_select",
                     interactive=True
                 )
-                search_by_index = gr.Number(value=0, label="Search by index", minimum=0, maximum=5119, precision=0)
-                search_by_text = gr.Textbox(lines=1, label="Search by text", value="")
+                search_by_index = gr.Number(value=0, label="Feature index", minimum=0, maximum=5119, precision=0)
+                search_by_text = gr.Textbox(lines=1, label="Search feature by text (CLIP-based, use 'Explore' tab for more precise search)", value="")
                 radio = gr.Radio(choices=[], label="Select a feature", interactive=True)
         
 
@@ -358,6 +358,7 @@ def create_intro_part():
             * You can observe the active features in different blocks plot on top of the generated image.
             ### Top Images
             * For each feature, you can view the top images that activate the feature the most.
+            * You can also search for a feature quickly using a text query (CLIP-based, can be imprecise). 
             ### Paint!
             * Generate an image using the prompt.
             * Paint on the generated image to apply interventions.
